@@ -13,6 +13,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-D> <ESC>:q!<CR>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
