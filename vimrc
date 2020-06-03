@@ -3,6 +3,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
@@ -13,6 +14,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-D> <ESC>:q!<CR>
+nnoremap . <C-W>+
+nnoremap , <C-W>-
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 set foldmethod=indent
