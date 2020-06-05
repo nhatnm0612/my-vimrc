@@ -14,8 +14,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-D> <ESC>:q!<CR>
-nnoremap . <C-W>+
-nnoremap , <C-W>-
+nnoremap > <C-W>+
+nnoremap < <C-W>-
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 set foldmethod=indent
