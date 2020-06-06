@@ -4,15 +4,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
 set splitbelow
 set splitright
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-J> <ESC>:wincmd j<CR>
+nnoremap <C-K> <ESC>:wincmd k<CR>
+nnoremap <C-L> <ESC>:wincmd l<CR>
+nnoremap <C-H> <ESC>:wincmd h<CR>
 nnoremap <C-D> <ESC>:q!<CR>
 nnoremap > <C-W>+
 nnoremap < <C-W>-
@@ -30,3 +31,5 @@ set autoindent
 set fileformat=unix
 set encoding=utf-8
 set nu
+set noswapfile
+set noerrorbells
