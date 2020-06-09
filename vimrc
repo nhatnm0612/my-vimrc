@@ -5,6 +5,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
 
@@ -15,8 +19,10 @@ nnoremap <C-K> <ESC>:wincmd k<CR>
 nnoremap <C-L> <ESC>:wincmd l<CR>
 nnoremap <C-H> <ESC>:wincmd h<CR>
 nnoremap <C-D> <ESC>:q!<CR>
-nnoremap > <C-W>+
-nnoremap < <C-W>-
+nnoremap > <ESC>:wincmd +<CR>
+nnoremap < <ESC>:wincmd -<CR>
+nnoremap H gT
+nnoremap L gt
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 set foldmethod=indent
@@ -33,3 +39,8 @@ set encoding=utf-8
 set nu
 set noswapfile
 set noerrorbells
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+syntax enable
+set background=dark
+colorscheme gruvbox
