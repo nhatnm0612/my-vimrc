@@ -38,7 +38,6 @@ set expandtab
 set autoindent
 set fileformat=unix
 set encoding=utf-8
-set nu
 set noswapfile
 set noerrorbells
 set background=dark
