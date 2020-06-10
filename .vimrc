@@ -24,6 +24,7 @@ nnoremap ,xml :-1read $HOME/.vim/.skeleton.xml<CR>7jdd2kwa
 nnoremap <space> za
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+set nu
 set path+=**
 set wildmenu
 set splitbelow
