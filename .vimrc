@@ -40,7 +40,6 @@ set autoindent
 set fileformat=unix
 set encoding=utf-8
 set noswapfile
-set noerrorbells
 set background=dark
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
