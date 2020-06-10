@@ -24,7 +24,6 @@ nnoremap ,xml :-1read $HOME/.vim/.skeleton.xml<CR>7jdd2kwa
 nnoremap <space> za
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
-set nu
 set path+=**
 set wildmenu
 set splitbelow
@@ -36,11 +35,12 @@ set softtabstop=4
 set shiftwidth=4
 set textwidth=79
 set expandtab
-set noerrorbells
 set autoindent
 set fileformat=unix
 set encoding=utf-8
+set number relativenumber
 set noswapfile
+set noerrorbells
 set background=dark
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
