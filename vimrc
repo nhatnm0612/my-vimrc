@@ -6,12 +6,14 @@ nnoremap <C-K> <ESC>:wincmd k<CR>
 nnoremap <C-L> <ESC>:wincmd l<CR>
 nnoremap <C-H> <ESC>:wincmd h<CR>
 nnoremap <C-D> <ESC>:q!<CR>
+nnoremap <C-T> <ESC>:terminal<CR>
 nnoremap > <ESC>:wincmd +<CR>
 nnoremap < <ESC>:wincmd -<CR>
 nnoremap H gT
 nnoremap L gt
-nnoremap ,xml :-1read $HOME/.vim/.skeleton.xml<CR>7jdd2kwa
+nnoremap ,xml :-1read $HOME/.vim/skeleton.xml<CR>7jdd2kwa
 nnoremap ,nt <ESC>:NERDTree<CR>:wincmd l<CR>
+nnoremap ,t <ESC>:tabedit<CR>
 nnoremap <space> za
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
@@ -31,4 +33,6 @@ set encoding=utf-8
 set number relativenumber
 set noswapfile
 set noerrorbells
+set background=dark
+colorscheme gruvbox
 syntax enable
