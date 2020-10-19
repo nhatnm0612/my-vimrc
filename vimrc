@@ -11,7 +11,6 @@ nnoremap > <ESC>:wincmd +<CR>
 nnoremap < <ESC>:wincmd -<CR>
 nnoremap H gT
 nnoremap L gt
-nnoremap ,xml :-1read $HOME/.vim/skeleton.xml<CR>7jdd2kwa
 nnoremap ,nt <ESC>:NERDTree<CR>:wincmd l<CR>
 nnoremap ,t <ESC>:terminal<CR>
 nnoremap <space> za
@@ -34,5 +33,4 @@ set number relativenumber
 set noswapfile
 set noerrorbells
 set background=dark
-colorscheme gruvbox
 syntax enable
