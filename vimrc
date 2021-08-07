@@ -34,3 +34,5 @@ set noswapfile
 set noerrorbells
 set background=dark
 syntax enable
+let g:airline#extensions#tabline#enabled = 1
+
