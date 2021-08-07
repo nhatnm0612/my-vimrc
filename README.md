@@ -54,7 +54,7 @@ python3 install.py
    `.ycm_extra_conf.py` inside youcompleteme folder and add Settings function
    at the end of that file:
 
-```
+```python
 def Settings( **kwargs ):
   return {
     'sys_path': [
