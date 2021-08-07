@@ -50,3 +50,17 @@ cd ~/.vim/pack/plugins/start/youcompleteme
 python3 install.py
 ```
 
+3. Add third-party package path to sys_path by editing this file
+   `.ycm_extra_conf.py` inside youcompleteme folder and add Settings function
+   at the end of that file:
+
+```
+def Settings( **kwargs ):
+  return {
+    'sys_path': [
+      '/path/to/some/third_party/package',
+      '/path/to/another/third_party/package'
+    ]
+  }
+```
+
